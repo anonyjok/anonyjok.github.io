@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Colr+Emoji+Glyf">
+    <link rel="stylesheet" href="/style.css"></style>
+    <link rel="icon" href="https://em-content.zobj.net/source/google/350/nerd-face_1f913.png" type="image/png">
+    <title>Cassiano</title>
+</head>
+
+<body class="preload">
+
+    <div class="top">
+
+        <div class="me">
+            <img src="https://em-content.zobj.net/source/animated-noto-color-emoji/356/nerd-face_1f913.gif"
+            title="Noto Color Emoji, Animated 15.0" alt="Nerd Emoji Gif">
+            <div>
+                <span title="name" id="name">Cassiano Monteiro</span>
+                <span title="nickname" id="nickname">AnonyJok</span>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>Contact me:</p>
+            <a href="mailto:anonyjok@gmail.com" target="_blank" title="Email">
+                <img src="https://www.svgrepo.com/show/349378/gmail.svg" alt="Email">
+            </a>
+            <a href="https://wa.me/5553999735122" target="_blank" title="Phone Number">
+                <img src="https://www.svgrepo.com/show/176768/whatsapp-social-media.svg" alt="Phone Number">
+            </a>
+            <a href="https://www.instagram.com/kojinona" target="_blank" title="Instagram">
+                <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram">
+            </a>
+        </div>
+
+    </div>
+    
+    <hr>
+    
+    <div id="content-grid">
+        <div id="things-i-made">
+            <h2>⚙ Things I made 🛠</h2>
+            
+            <label for="personal projects">Personal Projects:</label>
+            
+            <ol class="project-list">
+                <li id="this">
+                    <div class="project-controls">
+                        <button class="action-button" title="play" alt="play" onclick="toggle_iframe('this')">This</button>
+                        <div class="project-buttons">
+                            <button class="action-button play-button" title="play" alt="play" onclick="toggle_iframe('this')">▶</button><!--
+                        --><button class="action-button" title="website">
+                                <a target="_blank" href="https://anonyjok.github.io">↗</a>
+                            </button><!--
+                        --><button class="action-button description-button" title="description" alt="description" onclick="show_description('this')">&#10133;</button>
+                        </div>
+                    </div>
+                    <p class="project-description">This website you're in right now.</p>
+                </li>
+            </ol>
+
+            <label for="school projects">School Projects:</label>
+            <ol class="project-list">
+                <li id="acrostic">
+                    <div class="project-controls">
+                        <button class="action-button" title="play" alt="play" onclick="toggle_iframe('acrostic')">Acrostic</button>
+                        <div class="project-buttons">
+                            <button class="action-button play-button" title="play" alt="play" onclick="toggle_iframe('acrostic')">▶</button><!--
+                        --><button class="action-button" title="website">
+                                <a target="_blank" href="https://anonyjok.github.io/Acrostic">↗</a>
+                            </button><!--
+                        --><button class="action-button description-button" title="description" alt="description" onclick="show_description('acrostic')">&#10133;</button>
+                        </div>
+                    </div>
+                    <p class="project-description">Acrostic Puzzle Solver. Just a simple website to prove I could make one by myself. <span class="warning">(warning: it uses brute force to find the word)</span></p>
+                </li>
+                <li id="soberba">
+                    <div class="project-controls">
+                        <button class="action-button" title="play" alt="play" onclick="toggle_iframe('soberba')">Soberba</button>
+                        <div class="project-buttons">
+                            <button class="action-button play-button" title="play" alt="play" onclick="toggle_iframe('soberba')">▶</button><!--
+                        --><button class="action-button" title="website">
+                                <a target="_blank" href="https://anonyjok.github.io/SOBERBA/Atividade_Bootstrap">↗</a>
+                            </button><!--
+                        --><button class="action-button description-button" title="description" alt="description" onclick="show_description('soberba')">&#10133;</button>
+                        </div>
+                    </div>
+                    <p class="project-description">Simple website with Superb Bird-of-paradise theme to learn about the Bootstrap framework.</p>
+                </li>
+                <li id="about-minecraft">
+                    <div class="project-controls">
+                        <button class="action-button" title="play" alt="play" onclick="toggle_iframe('about-minecraft')">About-Minecraft</button>
+                        <div class="project-buttons">
+                            <button class="action-button play-button" title="play" alt="play" onclick="toggle_iframe('about-minecraft')">▶</button><!--
+                        --><button class="action-button" title="website">
+                                <a target="_blank" href="https://anonyjok.github.io/About-Minecraft/Atividade_Materialize">↗</a>
+                            </button><!--
+                        --><button class="action-button description-button" title="description" alt="description" onclick="show_description('about-minecraft')">&#10133;</button>
+                        </div>
+                    </div>
+                    <p class="project-description">Simple website with minecraft theme to learn about the Materialize framework.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div id="player-container">
+            <iframe src="about:blank" id="player" frameborder="0"></iframe>
+        </div>
+        
+    </div>
+
+    <script type="application/javascript" src="/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+
+body.preload * {
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition: max-height 0s !important;
+}
+
+body {
+    background-color: white;
+    font-family: 'Noto Colr Emoji Glyf', sans-serif;
+}
+
+.top {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top,
+.contact,
+.me {
+    display: flex;
+    align-items: center;
+}
+
+.me>img {
+    height: 80px;
+    width: auto;
+}
+
+.me>div {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0.3em;
+}
+
+.contact img {
+    margin: 0.1em;
+    width: 2em;
+}
+
+.contact p {
+    margin: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#nickname {
+    font-size: medium;
+    font-weight: bold;
+    color: gray;
+}
+
+#name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#player-container {
+    grid-column: span 2;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0px 0px 30px #000 inset;
+    background-image: url('https://em-content.zobj.net/source/animated-noto-color-emoji/356/robot_1f916.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+}
+
+#things-i-made {
+    display: flex;
+    flex-direction: column;
+}
+
+#things-i-made>h2 {
+    text-align: center;
+}
+
+.project-list {
+    list-style-type: disc;
+    margin-right: 1em;
+}
+
+.project-list li {
+    width: 100%;
+}
+
+.project-list li a {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-buttons {
+    margin-left: 1em;
+    font-size: 1.1em;
+    padding: 0.1em;
+}
+
+.action-button {
+    margin: 0px;
+    border: 0px;
+    background: inherit;
+    padding: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.project-description {
+    width: fit-content;
+    overflow-y: auto;
+
+    visibility: hidden;
+    max-height: 0px;
+    margin: 0px;
+    opacity: 0;
+
+    transition:
+        visibility 0.5s,
+        max-height 0.5s linear,
+        margin 0.5s ease-in-out,
+        opacity 0.5s linear;
+}
+
+.show {
+    visibility: visible;
+    max-height: 8em;
+    margin-block: 1em;
+    opacity: 1;
+}
+
+.warning {
+    font-weight: bold;
+    color: goldenrod;
+}
